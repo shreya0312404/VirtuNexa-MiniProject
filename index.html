@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plant Care Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="shortcut icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrilYEFQQzlG5-xFujFdLR_nQwKkwneWrMLA&s" type="image/x-icon">
+</head>
+
+<body>
+    <div class="main-container">
+        <!-- Main Navigation Bar (Sticky) -->
+        <header>
+            <h1>Plant Care Scheduler</h1>
+            <nav id="navbar">
+                <div class="hamburger" onclick="toggleMenu()">
+                    <i class="fas fa-bars"></i> <!-- Font Awesome hamburger icon -->
+                </div>
+                <ul>
+                    <li><a href="javascript:void(0);" onclick="togglePage('home')">Home</a></li>
+                    <li><a href="javascript:void(0);" onclick="togglePage('add-plant')">Add Plant</a></li>
+                    <li><a href="javascript:void(0);" onclick="togglePage('plant-list')">Your Plants</a></li>
+                    <li><a href="javascript:void(0);" onclick="togglePage('about')">About</a></li>
+                    <li><a href="javascript:void(0);" onclick="togglePage('contact')">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+
+        <!-- Home Section (This can be a landing page) -->
+        <section id="home" class="page-content">
+            <h2>Welcome to the Plant Care Scheduler</h2>
+            <p>Managing your plant care routines has never been easier! Whether you're a seasoned plant parent with a
+                collection of lush greenery or just getting started with your first few houseplants, our tool is
+                designed to help you stay on top of your plant care schedule. With our easy-to-use reminders for
+                watering, pruning, and fertilizing, you'll never miss an important task, ensuring your plants thrive and
+                grow beautifully.</p>
+        </section>
+
+
+        <!-- Add a New Plant Section -->
+        <section id="add-plant" class="page-content">
+            <h2>Add a New Plant</h2>
+            <div id="input-option">
+                <button id="manual-option" onclick="showManualInput()">Manual Input</button>
+                <button id="suggestion-option" onclick="showSuggestionInput()">Suggestion Option</button>
+            </div>
+
+            <!-- Manual input form -->
+            <form id="manual-form" class="input-form" style="display: none;">
+                <h2>Add a Plant Manually</h2>
+
+                <div class="input-group">
+                    <i class="fas fa-seedling"></i> <!-- Seedling icon -->
+                    <input type="text" id="plant-name" placeholder="Plant Name" required>
+                </div>
+
+                <div class="input-group">
+                    <i class="fas fa-tint"></i> <!-- Watering icon -->
+                    <input type="number" id="watering-frequency" placeholder="Watering Frequency (days)" required>
+                </div>
+
+                <div class="input-group">
+                    <i class="fas fa-cut"></i> <!-- Pruning icon -->
+                    <input type="number" id="pruning-frequency" placeholder="Pruning Frequency (days)" required>
+                </div>
+
+                <div class="input-group">
+                    <i class="fas fa-leaf"></i> <!-- Fertilizing icon -->
+                    <input type="number" id="fertilizing-frequency" placeholder="Fertilizing Frequency (days)" required>
+                </div>
+
+                <div class="input-group">
+                    <i class="fas fa-sun"></i> <!-- Sunlight icon -->
+                    <input type="text" id="sunlight" placeholder="Sunlight Requirements" required>
+                </div>
+
+                <div class="input-group">
+                    <i class="fas fa-align-left"></i> <!-- Description icon -->
+                    <textarea id="description" placeholder="Description" required></textarea>
+                </div>
+
+                <label for="manual-last-watered">Last Watered</label>
+                <input type="date" id="manual-last-watered" required>
+
+                <label for="manual-last-pruned">Last Pruned</label>
+                <input type="date" id="manual-last-pruned" required>
+
+                <label for="manual-last-fertilized">Last Fertilized</label>
+                <input type="date" id="manual-last-fertilized" required>
+
+                <button type="submit">Add Plant</button>
+            </form>
+
+            <!-- Suggestion input form -->
+            <form id="suggestion-form" class="input-form" style="display: none;">
+                <h2>Choose a Predefined Plant</h2>
+                <div class="input-group">
+                    <i class="fas fa-leaf"></i>
+                    <label for="plant-type">Select Plant Type</label>
+                    <select id="plant-type" required>
+                        <!-- Dynamic plant options will be added here -->
+                    </select>
+                </div>
+                <label for="suggestion-last-watered">Last Watered</label>
+                <input type="date" id="suggestion-last-watered" required>
+                <label for="suggestion-last-pruned">Last Pruned</label>
+                <input type="date" id="suggestion-last-pruned" required>
+                <label for="suggestion-last-fertilized">Last Fertilized</label>
+                <input type="date" id="suggestion-last-fertilized" required>
+                <button type="submit">Add Plant</button>
+            </form>
+        </section>
+
+        <!-- Reminder Modal -->
+        <div id="reminder-modal" class="modal" style="display: none;">
+            <div class="modal-content">
+                <span class="close-btn" onclick="closeModal()">&times;</span>
+                <div id="modal-content">
+                    <!-- Reminders will be dynamically inserted here -->
+                </div>
+            </div>
+        </div>
+
+        <section id="plant-list" class="page-content">
+            <h2>Your Plants</h2>
+            <div id="plants-container">
+                <!-- Dynamic plant items will be inserted here -->
+            </div>
+        </section>
+
+
+        <!-- About Section -->
+        <section id="about" class="page-content" style="display: none;">
+            <h2>About the Plant Care Scheduler</h2>
+            <p>
+                This is a simple tool to help you keep track of your plant care schedule, including watering, pruning,
+                and fertilizing. Whether you're a beginner or an experienced plant parent, this tool makes it easier to
+                manage your plants' needs, so they stay healthy and thrive. With reminders for each plant, you can rest
+                assured that you’ll never miss an important task. The tool also allows you to track the last time you
+                watered, pruned, or fertilized each plant, so you always know when it's time to take care of them next.
+            </p>
+            <p>
+                Whether you have a few houseplants or a large garden, the Plant Care Scheduler helps you organize your
+                plant care tasks with ease. You can add new plants with customized care schedules, get reminders for
+                your
+                next watering or pruning, and even receive tips for specific plants. Stay on top of your plant's needs
+                and
+                watch them grow beautifully with minimal effort!
+            </p>
+
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="page-content" style="display: none;">
+            <h2>Contact Us</h2>
+            <p>If you have any questions or need support, feel free to reach out!</p>
+            <p>Email: support@plantcare.com</p>
+
+            <!-- Contact Form -->
+            <form class="contact-form" action="your-form-processing-url" method="POST">
+                <input type="text" name="name" placeholder="Your Name" required />
+                <input type="email" name="email" placeholder="Your Email" required />
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+
+
+        <!-- Footer Section -->
+        <footer>
+            <p>© 2025 Plant Care Inc.</p>
+            <nav>
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </nav>
+        </footer>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
