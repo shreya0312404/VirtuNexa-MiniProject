@@ -1,4 +1,3 @@
-// Sample dataset for predefined plant suggestions (30 common plants)
 const predefinedPlants = [
     {
         "id": 1,
@@ -7,270 +6,271 @@ const predefinedPlants = [
         "pruning_frequency": 30,
         "fertilizing_frequency": 42,
         "sunlight": "Full Sun",
-        "description": "Aloe Vera is a succulent plant species of the genus Aloe."
+        "description": "Aloe Vera is widely known for its medicinal properties, especially for skin care."
     },
     {
         "id": 2,
-        "name": "Cactus",
-        "watering_frequency": 7,
-        "pruning_frequency": 365,
-        "fertilizing_frequency": 28,
-        "sunlight": "Full Sun",
-        "description": "Cactus are succulent plants that thrive in dry environments."
-    },
-    {
-        "id": 3,
-        "name": "Fiddle Leaf Fig",
-        "watering_frequency": 7,
-        "pruning_frequency": 180,
-        "fertilizing_frequency": 30,
-        "sunlight": "Bright Indirect Light",
-        "description": "Fiddle Leaf Fig is a tropical plant known for its large glossy leaves."
-    },
-    {
-        "id": 4,
-        "name": "Spider Plant",
-        "watering_frequency": 7,
-        "pruning_frequency": 180,
-        "fertilizing_frequency": 30,
-        "sunlight": "Indirect Light",
-        "description": "Spider plant is an easy-to-grow houseplant that thrives in indirect light."
-    },
-    {
-        "id": 5,
-        "name": "Snake Plant",
-        "watering_frequency": 10,
-        "pruning_frequency": 365,
-        "fertilizing_frequency": 60,
-        "sunlight": "Indirect Light",
-        "description": "Snake plants are low-maintenance plants that can thrive in low light."
-    },
-    {
-        "id": 6,
-        "name": "Pothos",
-        "watering_frequency": 7,
-        "pruning_frequency": 180,
-        "fertilizing_frequency": 30,
-        "sunlight": "Low to Medium Light",
-        "description": "Pothos are hardy plants that are perfect for beginners."
-    },
-    {
-        "id": 7,
-        "name": "Peace Lily",
-        "watering_frequency": 7,
-        "pruning_frequency": 180,
-        "fertilizing_frequency": 30,
-        "sunlight": "Indirect Light",
-        "description": "Peace lilies are known for their white blooms and ability to purify the air."
-    },
-    {
-        "id": 8,
-        "name": "ZZ Plant",
-        "watering_frequency": 14,
-        "pruning_frequency": 365,
-        "fertilizing_frequency": 60,
-        "sunlight": "Indirect Light",
-        "description": "ZZ plants are hardy, low-light plants with glossy green leaves."
-    },
-    {
-        "id": 9,
-        "name": "Dracaena",
-        "watering_frequency": 7,
-        "pruning_frequency": 180,
-        "fertilizing_frequency": 30,
-        "sunlight": "Bright Indirect Light",
-        "description": "Dracaenas are versatile plants that grow well in many indoor settings."
-    },
-    {
-        "id": 10,
-        "name": "English Ivy",
-        "watering_frequency": 5,
-        "pruning_frequency": 180,
-        "fertilizing_frequency": 30,
-        "sunlight": "Indirect Light",
-        "description": "English Ivy is a fast-growing vine perfect for covering trellises or pots."
-    },
-    {
-        "id": 11,
-        "name": "Aloe Vera",
-        "watering_frequency": 3,
-        "pruning_frequency": 30,
-        "fertilizing_frequency": 42,
-        "sunlight": "Full Sun",
-        "description": "Aloe Vera is a succulent plant species of the genus Aloe."
-    },
-    {
-        "id": 12,
-        "name": "Golden Pothos",
-        "watering_frequency": 7,
-        "pruning_frequency": 180,
-        "fertilizing_frequency": 30,
-        "sunlight": "Low to Medium Light",
-        "description": "Golden pothos are perfect for beginners and great for hanging baskets."
-    },
-    {
-        "id": 13,
-        "name": "Bamboo Palm",
-        "watering_frequency": 7,
-        "pruning_frequency": 180,
-        "fertilizing_frequency": 30,
-        "sunlight": "Indirect Light",
-        "description": "Bamboo palms are ideal for low-light conditions and help purify the air."
-    },
-    {
-        "id": 14,
-        "name": "Pilea Peperomioides",
-        "watering_frequency": 7,
-        "pruning_frequency": 180,
-        "fertilizing_frequency": 30,
-        "sunlight": "Indirect Light",
-        "description": "Pilea is a popular houseplant with round leaves and is easy to care for."
-    },
-    {
-        "id": 15,
-        "name": "Ficus Tree",
-        "watering_frequency": 7,
-        "pruning_frequency": 180,
-        "fertilizing_frequency": 30,
-        "sunlight": "Bright Indirect Light",
-        "description": "Ficus trees are large indoor plants with attractive foliage."
-    },
-    {
-        "id": 16,
-        "name": "Basil",
+        "name": "Basil (Tulsi)",
         "watering_frequency": 3,
         "pruning_frequency": 30,
         "fertilizing_frequency": 15,
         "sunlight": "Full Sun",
-        "description": "Basil is a fragrant herb commonly used in cooking."
+        "description": "Tulsi is a sacred plant in India, used in Ayurvedic medicine and worship."
+    },
+    {
+        "id": 3,
+        "name": "Marigold",
+        "watering_frequency": 5,
+        "pruning_frequency": 60,
+        "fertilizing_frequency": 30,
+        "sunlight": "Full Sun",
+        "description": "Marigolds are vibrant flowers commonly used in decorations and religious ceremonies."
+    },
+    {
+        "id": 4,
+        "name": "Jasmine",
+        "watering_frequency": 7,
+        "pruning_frequency": 60,
+        "fertilizing_frequency": 30,
+        "sunlight": "Full Sun to Partial Shade",
+        "description": "Jasmine is known for its fragrant white or yellow flowers, used in perfumes and traditional rituals."
+    },
+    {
+        "id": 5,
+        "name": "Neem",
+        "watering_frequency": 7,
+        "pruning_frequency": 180,
+        "fertilizing_frequency": 60,
+        "sunlight": "Full Sun",
+        "description": "Neem is a medicinal plant known for its antibacterial and anti-inflammatory properties."
+    },
+    {
+        "id": 6,
+        "name": "Henna (Mehndi)",
+        "watering_frequency": 5,
+        "pruning_frequency": 30,
+        "fertilizing_frequency": 30,
+        "sunlight": "Full Sun",
+        "description": "Henna is used for temporary body art and has medicinal properties."
+    },
+    {
+        "id": 7,
+        "name": "Tulip",
+        "watering_frequency": 5,
+        "pruning_frequency": 60,
+        "fertilizing_frequency": 30,
+        "sunlight": "Full Sun",
+        "description": "Tulips are popular flowers with bright, colorful blooms that are widely grown in gardens."
+    },
+    {
+        "id": 8,
+        "name": "Lily",
+        "watering_frequency": 7,
+        "pruning_frequency": 60,
+        "fertilizing_frequency": 30,
+        "sunlight": "Full Sun to Partial Shade",
+        "description": "Lily is a beautiful flowering plant, popular in gardens and as cut flowers."
+    },
+    {
+        "id": 9,
+        "name": "Hibiscus",
+        "watering_frequency": 5,
+        "pruning_frequency": 30,
+        "fertilizing_frequency": 30,
+        "sunlight": "Full Sun",
+        "description": "Hibiscus flowers are known for their large, colorful blooms and are used in herbal teas."
+    },
+    {
+        "id": 10,
+        "name": "Mango Tree",
+        "watering_frequency": 10,
+        "pruning_frequency": 365,
+        "fertilizing_frequency": 60,
+        "sunlight": "Full Sun",
+        "description": "The mango tree is widely grown for its delicious fruits, which are also important in cultural rituals."
+    },
+    {
+        "id": 11,
+        "name": "Banana Plant",
+        "watering_frequency": 7,
+        "pruning_frequency": 180,
+        "fertilizing_frequency": 30,
+        "sunlight": "Full Sun",
+        "description": "Banana plants are grown for their nutritious fruit and large leaves."
+    },
+    {
+        "id": 12,
+        "name": "Guava Tree",
+        "watering_frequency": 7,
+        "pruning_frequency": 180,
+        "fertilizing_frequency": 30,
+        "sunlight": "Full Sun",
+        "description": "Guava trees produce sweet and tangy fruits rich in Vitamin C."
+    },
+    {
+        "id": 13,
+        "name": "Curry Leaf Plant",
+        "watering_frequency": 5,
+        "pruning_frequency": 30,
+        "fertilizing_frequency": 30,
+        "sunlight": "Full Sun",
+        "description": "Curry leaves are commonly used in Indian cooking for their distinct flavor."
+    },
+    {
+        "id": 14,
+        "name": "Chili Pepper Plant",
+        "watering_frequency": 5,
+        "pruning_frequency": 30,
+        "fertilizing_frequency": 30,
+        "sunlight": "Full Sun",
+        "description": "Chili peppers are a common ingredient in Indian cuisine, known for their spiciness."
+    },
+    {
+        "id": 15,
+        "name": "Papaya Tree",
+        "watering_frequency": 7,
+        "pruning_frequency": 180,
+        "fertilizing_frequency": 60,
+        "sunlight": "Full Sun",
+        "description": "Papaya trees are grown for their sweet, tropical fruit."
+    },
+    {
+        "id": 16,
+        "name": "Moringa (Drumstick Tree)",
+        "watering_frequency": 7,
+        "pruning_frequency": 180,
+        "fertilizing_frequency": 60,
+        "sunlight": "Full Sun",
+        "description": "Moringa is known for its highly nutritious leaves and is used in various traditional medicines."
     },
     {
         "id": 17,
-        "name": "Lavender",
+        "name": "Champa",
         "watering_frequency": 7,
-        "pruning_frequency": 60,
-        "fertilizing_frequency": 30,
+        "pruning_frequency": 180,
+        "fertilizing_frequency": 60,
         "sunlight": "Full Sun",
-        "description": "Lavender is a fragrant herb known for its calming aroma."
+        "description": "Champa is a fragrant flowering tree, often used in religious and cultural practices."
     },
     {
         "id": 18,
-        "name": "Chives",
-        "watering_frequency": 7,
-        "pruning_frequency": 60,
-        "fertilizing_frequency": 30,
+        "name": "Coconut Tree",
+        "watering_frequency": 10,
+        "pruning_frequency": 365,
+        "fertilizing_frequency": 60,
         "sunlight": "Full Sun",
-        "description": "Chives are a hardy herb with mild onion-like flavor."
+        "description": "Coconut trees are widely grown for their edible fruit and are used in cooking, oil, and religious ceremonies."
     },
     {
         "id": 19,
-        "name": "Mint",
-        "watering_frequency": 5,
-        "pruning_frequency": 30,
+        "name": "Lotus",
+        "watering_frequency": 7,
+        "pruning_frequency": 180,
         "fertilizing_frequency": 30,
         "sunlight": "Full Sun",
-        "description": "Mint is a highly fragrant herb commonly used in tea and cooking."
+        "description": "The lotus is a sacred flower often used in Hindu and Buddhist symbolism."
     },
     {
         "id": 20,
-        "name": "Rosemary",
+        "name": "Bamboo",
         "watering_frequency": 7,
-        "pruning_frequency": 30,
+        "pruning_frequency": 180,
         "fertilizing_frequency": 30,
-        "sunlight": "Full Sun",
-        "description": "Rosemary is a fragrant herb used in cooking and has medicinal properties."
+        "sunlight": "Full Sun to Partial Shade",
+        "description": "Bamboo is a versatile plant used for construction, crafting, and as a decorative element."
     },
     {
         "id": 21,
-        "name": "Geranium",
-        "watering_frequency": 7,
-        "pruning_frequency": 60,
-        "fertilizing_frequency": 30,
+        "name": "Peepal Tree",
+        "watering_frequency": 10,
+        "pruning_frequency": 365,
+        "fertilizing_frequency": 60,
         "sunlight": "Full Sun",
-        "description": "Geraniums are flowering plants with colorful blooms."
+        "description": "The Peepal tree is considered sacred in Hinduism and Buddhism."
     },
     {
         "id": 22,
-        "name": "Begonia",
-        "watering_frequency": 7,
-        "pruning_frequency": 60,
-        "fertilizing_frequency": 30,
-        "sunlight": "Indirect Light",
-        "description": "Begonias are beautiful plants with attractive foliage and flowers."
+        "name": "Bo Tree",
+        "watering_frequency": 10,
+        "pruning_frequency": 365,
+        "fertilizing_frequency": 60,
+        "sunlight": "Full Sun",
+        "description": "The Bo tree is known as the tree under which Buddha attained enlightenment."
     },
     {
         "id": 23,
-        "name": "Maranta",
+        "name": "Ashoka Tree",
         "watering_frequency": 7,
         "pruning_frequency": 180,
-        "fertilizing_frequency": 30,
-        "sunlight": "Indirect Light",
-        "description": "Maranta is known for its beautiful foliage, often called 'prayer plants.'"
+        "fertilizing_frequency": 60,
+        "sunlight": "Full Sun",
+        "description": "Ashoka tree is considered auspicious and is used in various religious rituals."
     },
     {
         "id": 24,
-        "name": "Eucalyptus",
-        "watering_frequency": 10,
+        "name": "Sandalwood Tree",
+        "watering_frequency": 7,
         "pruning_frequency": 180,
         "fertilizing_frequency": 60,
         "sunlight": "Full Sun",
-        "description": "Eucalyptus trees are known for their aromatic leaves."
+        "description": "Sandalwood is known for its fragrant wood, which is used in incense and cosmetics."
     },
     {
         "id": 25,
-        "name": "Cucumber",
-        "watering_frequency": 3,
-        "pruning_frequency": 30,
-        "fertilizing_frequency": 30,
+        "name": "Bael Tree",
+        "watering_frequency": 7,
+        "pruning_frequency": 180,
+        "fertilizing_frequency": 60,
         "sunlight": "Full Sun",
-        "description": "Cucumbers are a fast-growing, refreshing vegetable commonly grown in gardens."
+        "description": "Bael tree is sacred and its fruit is used in Hindu rituals and Ayurvedic medicine."
     },
     {
         "id": 26,
-        "name": "Zinnia",
+        "name": "Neem Tree",
         "watering_frequency": 7,
-        "pruning_frequency": 60,
-        "fertilizing_frequency": 30,
+        "pruning_frequency": 180,
+        "fertilizing_frequency": 60,
         "sunlight": "Full Sun",
-        "description": "Zinnias are colorful, easy-to-grow flowers that brighten up any garden."
+        "description": "Neem trees have medicinal properties and are used in natural remedies."
     },
     {
         "id": 27,
-        "name": "Peperomia",
+        "name": "Tamarind Tree",
         "watering_frequency": 7,
         "pruning_frequency": 180,
-        "fertilizing_frequency": 30,
-        "sunlight": "Indirect Light",
-        "description": "Peperomias are compact, easy-care plants with interesting foliage."
+        "fertilizing_frequency": 60,
+        "sunlight": "Full Sun",
+        "description": "Tamarind trees produce sour fruits commonly used in Indian cuisine."
     },
     {
         "id": 28,
-        "name": "Hoya",
-        "watering_frequency": 10,
+        "name": "Indian Gooseberry (Amla)",
+        "watering_frequency": 7,
         "pruning_frequency": 180,
         "fertilizing_frequency": 60,
-        "sunlight": "Indirect Light",
-        "description": "Hoyas are often known as wax plants due to their thick, waxy leaves."
+        "sunlight": "Full Sun",
+        "description": "Amla is rich in Vitamin C and is used for its medicinal and nutritional properties."
     },
     {
         "id": 29,
-        "name": "Coleus",
+        "name": "Red Poppy",
         "watering_frequency": 5,
         "pruning_frequency": 30,
         "fertilizing_frequency": 30,
-        "sunlight": "Indirect Light",
-        "description": "Coleus is a colorful plant often grown for its vibrant foliage."
+        "sunlight": "Full Sun",
+        "description": "Red poppy flowers are known for their vibrant color and are often seen in Indian fields."
     },
     {
         "id": 30,
-        "name": "Impatiens",
+        "name": "Mint (Pudina)",
         "watering_frequency": 5,
-        "pruning_frequency": 60,
+        "pruning_frequency": 30,
         "fertilizing_frequency": 30,
-        "sunlight": "Partial Shade",
-        "description": "Impatiens are shade-loving flowers that bloom in vibrant colors."
+        "sunlight": "Full Sun",
+        "description": "Mint is a fragrant herb commonly used in tea and cooking."
     }
 ];
+
 
 // Load saved plants from localStorage
 let plantData = JSON.parse(localStorage.getItem("plantData")) || [];
